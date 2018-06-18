@@ -1,0 +1,429 @@
+.h1 {
+    font-size: 50px;
+    letter-spacing: 1.2px
+	}
+	.h2 {
+		font-size: 40px;
+        letter-spacing: 1.3px
+	}
+	.h3 {
+		font-size: 20px;
+		letter-spacing: 2px;
+		line-height: 1.3
+	}
+	.p {
+    	font-size: 18px;
+    	letter-spacing: 1.5px;
+    	line-height: 1.7px;
+	}
+	a {
+    	color: inherit;
+    	text-decoration: none;
+    	font-family: 'lato', sans-serif;
+    	letter-spacing: 1.5px;
+	}
+	.top_fixed_right {
+		position: fixed;
+		right: 15px;
+		top: 0px;
+		letter-spacing: 1px;
+		transition: right 0.3s;
+		font-family: 'Lato', sans-serif;
+        display: block;
+	}
+
+	.top_fixed_left {
+		position: fixed;
+		left: 15px;
+		top: 0px;
+		letter-spacing: 1px;
+		-webkit-transition: left 0.2s ease;
+		transition: left 0.3s ease;
+		font-family: 'Lato', sans-serif;
+        display: block;
+	}
+	.top_fixed_left:hover {
+		left: 18px;
+	}
+	.overmij_background {
+		background: url(http://topsportacademy.com/wp-content/uploads/2017/04/benjamin-combs-27619.jpg);
+		background-size: cover;
+		background-position: center
+	}
+	.overmij_content {
+		color: white;
+		height: 100%;
+		padding: 50px;
+  	  	line-height: 1.5;
+    	letter-spacing: 0.9px;
+	}
+	.de_monchy {
+		font-size: 18px;
+		font-family: 'Lato', sans-serif;
+		position: fixed;
+		top: 25%;
+		left: 35px;
+		line-height: 1.25;
+		text-align: center;
+		color: #4e504f;
+        z-index: 99;
+        transition: all 1s ease;
+	}
+	.fotografie {
+		font-size: 17px;
+		font-family: 'Lato', sans-serif;
+		position: fixed;
+		top: 25%;
+		right: 35px;
+		line-height: 1.25;
+		text-align: center;
+		color: #4e504f;
+        transition: color 1s ease;
+        z-index: 999;
+        transition: all 1s ease;
+	}
+
+	.line_vertical {
+		width: 1px;
+		height: 80px;
+		background: #000;
+		display: block;
+		margin: auto;	
+	}
+	.top_mid_fix {
+		position: fixed;
+		top: 0px;
+		letter-spacing: 1px;
+		-webkit-transition: right 0.2s;
+		transition: right 0.3s;
+		font-family: 'Lato', sans-serif;
+		text-align: center;
+		width: 100%;
+		margin: auto;
+	}
+	.line_horizontal {
+		width: 80px;
+		height: 1px;
+		background: #000;
+		display: block;
+		margin: auto;	
+	}
+	.project_wrapper {
+		margin: 50px 0px 0px 0px;
+		background-repeat: no-repeat;
+		position: relative;
+		width: 500em;
+	}
+	.image_project {
+		height: 80%;
+		width: auto;
+		margin: 1.5em 0.5em 0em 0em;
+	}
+	.project_introduction {
+		float: left;
+		padding: 12em 0 0 4em;
+		width: 20em;
+		font-family: 'Lato', sans-serif;
+	}
+	.project_title {
+		font-size: 18px;
+	}
+	.project_body {
+		font-size: 14px;
+    	letter-spacing: 1.1px;
+    	line-height: 1.7em;
+    	padding-right: 2em;
+	}
+
+	.header_wrapper {
+		height: 600px;
+		margin: 4em 0em 0em 0em;
+		box-shadow: 0px 30px 60px #b9b8b8;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+	.header_content {
+		background: url(images/mountains.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 100%;
+	}
+	.overmij_wrapper {
+  		position: absolute;
+  		bottom: 0;
+  		left: 0;
+  		right: 0;
+  		background-color: #00000;
+  		overflow: hidden;
+  		width: 100%;
+  		height: 0;
+  		transition: .5s ease;
+	}
+	.header_wrapper:hover .overmij_wrapper{
+		height: 100%;
+	}
+
+	.title {
+		font-size: 210px;
+		color: rgba(255, 255, 255, 0.45);
+		text-align: left;
+		line-height: 194px;
+		margin-top: 0px;
+	}
+	.collection_wrapper {
+		margin-bottom: 75px;
+		width: 55%;
+		color: #383736;
+	}
+	.collection_title {
+		letter-spacing: 1.8px;
+		line-height: 1;
+		margin-top: 150px;
+	}
+	.collection_body {
+    	font-size: 18px;
+    	letter-spacing: 1.5px;
+    	line-height: 1.7em;
+	}
+	.collection_info {
+		padding: 20px;
+		width:50%;
+		font-family: 'Lato', sans-serif;
+	}
+	.em_margin_left {
+		margin-left: 1em;
+	}
+	.dash_grow {
+		height: 2px;
+		width: 1em;
+		-webkit-transition: width 1s cubic-bezier(0, 0.18, 0.57, 1.01);
+		transition: width 1s cubic-bezier(0, 0.18, 0.57, 1.01);
+		background: #000;
+		margin-top: 39px;
+		position: absolute;
+	}
+
+	.after_header {
+		color: black;
+		font-size: 60px;
+		font-weight: 100;
+		text-align: left;
+		width: 80%;
+		letter-spacing: 2.2px;
+		margin-top: 2em;
+		margin-left: 1em;
+		margin-bottom: 4em;
+		-webkit-transition: color 2s;
+		transition: 1s;
+		font-family: 'Lato', sans-serif;
+	}
+	.happen {
+		color: white;
+		float: right;
+		transition: color 2s;
+		transition-delay: 0.3s;
+	}
+	.after_header:hover .dash_grow{
+		width: 3em;
+	}
+	.after_header:hover .happen {
+		color: #000;
+		transition: color 1s;
+   		transition-delay: 1s;
+	} 
+
+	.row {
+		display: flex;
+	}
+	.triath_col_left {
+		width: 70%;
+	}
+	.half_col_left {
+		width: 50%;
+	}
+	.half_col_right {
+		float: right;
+		flex: 1;
+	}
+	.image_lead {
+		width: 100%;
+		float: right;
+		display: block;
+		height: auto;
+	}
+	.varsity_girls {
+		margin-top: -70px;
+		margin-left: -70px;
+		width: 105%;
+		float: right;
+        box-shadow: 0px 30px 60px #b9b8b8;
+        z-index: 1;
+        position:relative;
+	}
+	.image_action {
+		font-size: 25px;
+		letter-spacing: 1.5px;
+		line-height: 1;	
+		color: #565656;
+	}
+	.image_info {
+		padding: 25px;
+		width: 2em%;
+		margin-top: 25%;
+		font-family: 'Lato', sans-serif;
+		transition: 2s;
+	}
+	.image_info:hover + .line, .collection_info:hover + .line_collection {
+		width: 250px;
+	}
+	.image_info:hover {
+		box-shadow: 0px 30px 60px #b9b8b8;
+	}
+
+	.container {
+		position: relative;
+		width: 100%;
+		float: right;
+	}
+	.container_left {
+		position: relative;
+		width: 55%;
+    }
+	.container_right {
+		position: relative;
+		width: 40%;
+		flex: 1;
+	}
+	
+	.container:hover  .line {
+		width: 300px;
+	}
+
+	.container:hover .overlay {
+  		height: 100%;
+	}
+
+	.hover_text {
+		font-size: 18px;
+		letter-spacing: 1px;
+		white-space: nowrap;
+		color: white;
+		position: absolute;
+		overflow: hidden;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
+	.overlay {
+  		position: absolute;
+  		bottom: 0;
+  		left: 0;
+  		right: 0;
+  		background-color: rgba(0, 0, 0, 0.8);
+  		overflow: hidden;
+  		width: 100%;
+  		height: 0;
+  		transition: .5s ease;
+}
+	.line {
+		height: 1px;
+		background: #2196F3;
+		width: 175px;
+		-webkit-transition: width 0.8s;
+		transition: width 0.8s;
+	}
+	.line_collection {
+		height: 1px;
+		background: #bbbfd1;
+		width: 175px;
+		-webkit-transition: width 0.8s;
+		transition: width 0.8s;
+	}
+	.line_project {
+		height: 1px;
+		background: #bbbfd1;
+		width: 175px;
+		-webkit-transition: width 0.8s;
+		transition: width 0.8s;
+		float: right;
+	}
+
+	.after_header_image {
+		margin-top: 60px;
+		height: 550px;
+		float: right;
+		margin-right: 50px;
+		border: white solid 15px;
+		float: left;
+	}
+	
+.contact_wrapper {
+    padding: 1em 0em 3em 0em;
+    margin: 10em 0em 0em 0em;
+    color: black;
+    height: 10em;
+    overflow: hidden;
+    transition: all 1s;
+    z-index: 2;
+    position: relative;
+    box-shadow: inset 0px 0px 60px #b9b8b8;
+    width: 100%;
+    font-family: 'lato';
+}
+
+.homepage_side_margins {
+    margin: 0em 6em 0em 6em
+}
+
+.contact_wrapper:hover {
+    margin-top: -20em;
+    height: 28em;
+    background: black;
+    color: white;
+    box-shadow: 0px 0px 60px #b9b8b8;
+}
+
+.contact_label {
+    border-bottom: white 2px solid;
+    width: 20%;
+    padding: 1em 2em 0.1em 0em;
+    margin: 1em 10em 0em 0em;
+    transition: all 1s ease;
+    box-sizing: border-box;
+}
+
+.contact_element_wrapper {
+    width: 40%;
+    color: white;
+    font-size: 25px;
+    font-family: 'lato', sans-serif;
+    letter-spacing: 1.1px;
+}
+
+.contact_input {
+    width: 100%;
+    padding-bottom: 0.5em;
+    padding-left: 5px;
+    transition: all 0.4s ease;
+    color: inherit;
+    background: inherit;
+    box-sizing: border-box;
+    
+}
+
+.contact_heading {
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    letter-spacing: 1.3px;
+}
+
+.col_left {
+    float: left;
+}
+
+.col_right {
+    float: right;
+}

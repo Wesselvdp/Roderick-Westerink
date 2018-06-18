@@ -1,0 +1,189 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+
+<div class="homepage_side_margins">
+    <div class="top_fixed_left">
+        <p><a href="#contact_container">Contact</a></p>
+	</div>
+	<div class="top_fixed_right" onmouseover="this.style.right='10px'" onmouseout="this.style.right='15px'">
+        <p>About me</p>
+    </div>
+	
+	<div id="de_monchy_links" class="de_monchy">
+		<p><strong>D<br>E<br><br>M<br>O<br>N<br>C<br>H<br>Y</strong></p>
+		<div id="lijn_links" class="line_vertical"></div>
+	</div>
+	
+	<div id="fotografie_rechts" class="fotografie">
+		<p><strong>F<br>O<br>T<br>O<br>G<br>R<br>A<br>F<br>I<br>E</strong></p>
+		<div id="lijn_rechts" class="line_vertical"></div>
+	</div>
+	
+	<div class="header_wrapper">
+	
+		<div class="header_content">
+			<p class="title">De<br> Monchy<br> Fotografie<br></p>
+		</div>
+		<div class="overmij_wrapper row"> 
+			<div class="half_col_left overmij_background">
+			</div>
+			
+			<div class="half_col_right overmij_content">
+				<span class="h2"><center>Over mij, Ellen.</center></span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus libero nulla, et egestas quam tempor sed. Ut sit amet auctor turpis. Nunc rhoncus dui vel magna porta fermentum. Pellentesque commodo ex velit, ut ultricies libero dignissim vel. Suspendisse fermentum metus non pretium bibendum. Pellentesque in purus ut mauris blandit eleifend.</p>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="after_header">
+			<div class="dash_grow"></div>
+			<div class="em_margin_left">
+				Capturing moments 
+			</div>
+			<div class="Happen">
+				as they happen
+			</div>
+	</div>
+	
+	<div class="row">
+		<div href="Collection.html" class="triath_col_left">
+			<div class="container">
+				<img src="images/seth-doyle-250578-unsplash.jpg" class="image_lead">
+				<div class="overlay">
+					<div class="hover_text h2"> 
+						<a href="collection.html">Zie Collectie</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="half_col_right">
+			<div class="image_info">
+				<p class="h3">Triathlon does not build character. It reveals it.</p>
+				<a href="collection.html" class="image_action">Naar collectie</a>
+			</div>
+			<div class="line"></div>
+		</div>
+	</div>
+	
+	<!-- <div class="collection_wrapper">
+		<p class="h2 collection_title">Love in the Powerhouse</p>
+		<p></p>
+		&mdash;
+		<p class="collection_body">The way CSS is used on a webpage has overwhelmingly been determined by web designers, not website owners. So the web designer is making lovely, well commented CSS code and has been placing it in several different files for clarity. They think, with merit, "I have done an amazing wonderful job". This is what they have been taught.</p>
+	</div> -->
+	
+	<div class="row">
+			<div class="container_left">
+				<img src="images/jeremy-bishop-603440-unsplash.jpg" class="image_lead" alt="Varsity">
+			</div>
+			<div class="container_right">
+				<div class="collection_info">
+					<p class="h3">Pristine waters, hard catches</p>
+					<span class="image_action">Varese 2017</span>
+				</div>
+				<div class="line_collection"></div>
+			</div>
+	</div>
+	
+	<div class="row">
+		<div class="container_left">
+		</div>
+		<div class="container_right">
+			<img src="images/mountains.jpg" class="varsity_girls">
+		</div>
+	</div>
+</div>
+    <div id="contact_container" class="contact_wrapper">
+
+        <div class="homepage_side_margins">
+            <div id="contact_heading_div" class="contact_heading">
+                <p id="contact_heading_p">Breng jouw project tot leven.</p>
+            </div>
+        
+
+                <div id="email_container" class="contact_element_wrapper col_left">
+                    <div id="label_email" class="contact_label">
+                        Email
+                    </div>
+                    <div id="input_email" class="contact_input">
+                        yourname@emailadress.com
+                    </div>
+                </div>
+
+                <div id="phone_container" class="contact_element_wrapper col_right">
+                    <div id="label_phone" class="contact_label">
+                        Telefoon
+                    </div>
+                    <div id="input_phone" class="contact_input">
+                        +31 6 12345678
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+            
+
+
+
+	
+<script>
+    document.getElementById("contact_container").onmouseover = function() {mouseOverContact()}
+    document.getElementById("contact_container").onmouseout = function() {mouseOutContact()}
+    
+    function mouseOverContact(){
+        document.getElementById("fotografie_rechts").style.color = "white";
+        document.getElementById("fotografie_rechts").style.top = "40%";
+        document.getElementById("lijn_rechts").style.background = "white";
+        document.getElementById("de_monchy_links").style.color = "white";
+        document.getElementById("de_monchy_links").style.top = "40%";
+        document.getElementById("lijn_links").style.background = "white";
+        document.getElementById("contact_heading_div").style.color = "white";
+        document.getElementById("contact_heading_p").innerHTML = "Koffie?";
+    }
+    function mouseOutContact(){
+        document.getElementById("fotografie_rechts").style.color = "black";
+        document.getElementById("fotografie_rechts").style.top = "25%";
+        document.getElementById("lijn_rechts").style.background = "black";
+        document.getElementById("de_monchy_links").style.color = "black";
+        document.getElementById("de_monchy_links").style.top = "25%";
+        document.getElementById("lijn_links").style.background = "black";
+        document.getElementById("contact_heading_div").style.color = "black";
+        document.getElementById("contact_heading_p").innerHTML = "I Dare you.";
+    }
+    
+    document.getElementById("email_container").onmouseover = function() {mouseOverEmail()}
+    document.getElementById("email_container").onmouseout = function() {mouseOutEmail()}
+    
+    function mouseOverEmail(){
+        document.getElementById("label_email").style.width = "100%";
+        document.getElementById("input_email").style.background = "white";
+        document.getElementById("input_email").style.color = "black";
+    }
+    function mouseOutEmail(){
+        document.getElementById("label_email").style.width = "20%"
+        document.getElementById("input_email").style.background = "inherit";
+        document.getElementById("input_email").style.color = "inherit";
+    }
+    document.getElementById("phone_container").onmouseover = function() {mouseOverPhone()}
+    document.getElementById("phone_container").onmouseout = function() {mouseOutPhone()}
+    
+    function mouseOverPhone(){
+        document.getElementById("label_phone").style.width = "100%";
+        document.getElementById("input_phone").style.background = "white";
+        document.getElementById("input_phone").style.color = "black";
+    }
+    function mouseOutPhone(){
+        document.getElementById("label_phone").style.width = "20%"
+        document.getElementById("input_phone").style.background = "inherit";
+        document.getElementById("input_phone").style.color = "inherit";
+    }
+    
+</script>	
+</body>
+</html>

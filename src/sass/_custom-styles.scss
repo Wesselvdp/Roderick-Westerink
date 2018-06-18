@@ -1,0 +1,244 @@
+// Variables, move to seperate file later on
+$main-image: url('../../images/tree-brain.jpg');
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+
+// Intro
+:root {
+    --blur: 5px;
+}
+
+.media-info {
+    display: inline;
+}
+body {
+    font-family: "Cabin", sans-serif;
+    background: {
+        image: $main-image;
+        repeat: no-repeat;
+        size: auto;
+        position: 50% -45rem;
+    }
+}
+
+.intro {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    &::before {
+        content: "";
+        background-image: $main-image;
+        filter: blur(var(--blur));
+        background-size: cover;
+        z-index: -1;
+        position: fixed;
+        transition: 1.5s all cubic-bezier(0.06, 0.34, 0.21, 1.74);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
+    svg { 
+        width: 40%;
+        border: 1px solid rgba(255,255,255,0.3);
+        margin-left: 30%;
+        border-radius: 50%;
+      }
+      #roseline, 
+      #majline {
+        stroke: #eee;
+        stroke-width: .5;
+      }
+      text {
+          font-family: Montserrat, sans-serif;
+          font-size: 10;
+          fill: #eee;
+      }
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+.intro-2 {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background: #eee;
+    
+    svg {
+        width: 10rem;
+        margin: auto;
+        position: absolute;
+        left: 1px;
+        right: 1px;
+        top: 1px;
+        bottom: 1px;
+        transition: all 1s ease;
+        opacity: 0;
+    }
+    .slide-1 {
+    position: fixed;
+    left: 0;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background: #000;
+    transition: all 0.3s ease;
+    }
+    .slide-2 {
+        position: fixed;
+        left: 0;
+        right: 100%;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        background: #fff;
+        transition: all 0.3s ease;
+        transition-delay: 0.2s;
+        }
+}
+
+
+//dev class, delete after
+.bg-red {
+    background: red;
+}
+.gal-mason {
+    img {
+        margin: 0.75rem 0rem;
+    }
+}
+
+.project {
+    &:hover {
+        .project-title {
+            opacity: 1;
+            filter: blur(0px);
+        }
+    }
+    .sq-pos {
+        position: relative;
+        z-index: 10;
+    }
+    .project-title {
+        opacity: 1;
+        transition: all 0.6s ease;
+        transition-delay: filter 0.4s;
+       // filter: blur(8px);
+    }
+    .project-heading-1 {
+        background: url('../../images/tree-brain.jpg');
+        background-size: contain;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+        margin-top: 14rem;
+        font-size: 22rem;
+        font-weight: 700;
+        transition: all 0.3s ease;
+    }
+    .project-heading-2 {
+        background: url('../../images/building-vertical-2.jpg');
+        background-size: cover;
+        background-position: 50% 50%;
+        font-size: 14rem;
+        // background-attachment: fixed;
+        -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+        margin-top: 20rem;
+        font-weight: 700;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+
+.after-intro {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.backdrop {
+    z-index: -1;
+}
+.height {
+    height: 100vh;
+}
+
+.vh80 {
+    height: 90vh;
+}
+.branding {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    &::after {
+        content: "";
+        margin: 0.3rem;
+        display: block;
+        width: 2px;
+        height: 5rem;
+        background: rgb(19, 19, 19);
+        position: relative;
+    }
+}
+.no-shadow {
+    box-shadow: none !important;
+}
+img {
+    box-shadow: 0px 30px 60px #b9b8b8;
+    transition: 
+        opacity 0.3s ease,
+        transform 0.4s ease;
+    
+}
+.flex-gallery {
+    padding: 0 1rem;
+    display: flex;
+    max-width: 100%;
+    .grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 100%;
+        .cell {
+            border: 2px solid green;
+            flex: 50%;
+        }
+        img {
+            width: 100%;
+        }
+
+    }
+}
+.ixi {
+    .cell {
+        width: 33% !important;
+    }
+}
+.masthead {
+    padding: 0px 6rem;
+    .header-media {
+        text-align: center;
+        height: 100vh;
+        position: relative;
+        opacity: 1;
+        transition: opacity 3s linear;
+        // box-shadow: 0px 30px 60px #b9b8b8;
+        background: {
+            image: url('../../images/svg/logo-roderick.svg');
+            size: 20%;
+            position: center;
+            repeat: no-repeat;
+        }
+        .scroll-down {
+            text-align: center;
+            padding-bottom: 3rem;
+        }
+    }
+}
+
