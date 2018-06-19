@@ -3,7 +3,7 @@
 // Parallax
 
 
-var rellax = new Rellax('.rellax');
+var rellax = new rellax('.rellax');
 
 // remove "Scroll-down" after scolling
 // function removeScroller(e) {

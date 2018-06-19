@@ -3,9 +3,6 @@
 :root {
   --blur: 5px; }
 
-.media-info {
-  display: inline; }
-
 body {
   font-family: "Cabin", sans-serif;
   background-image: url("../../images/tree-brain.jpg");
@@ -29,7 +26,6 @@ body {
     right: 1px;
     top: 1px;
     bottom: 1px;
-    transition: all 1s ease;
     opacity: 0; }
   .intro-2 .slide-1 {
     position: fixed;
@@ -58,10 +54,6 @@ body {
   opacity: 1;
   filter: blur(0px); }
 
-.project .sq-pos {
-  position: relative;
-  z-index: 10; }
-
 .project .project-title {
   opacity: 1; }
 
@@ -87,7 +79,7 @@ body {
   z-index: 1; }
 
 .after-intro {
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.5s ease; }
 
 .backdrop {
@@ -145,7 +137,6 @@ img {
     height: 100vh;
     position: relative;
     opacity: 1;
-    transition: opacity 3s linear;
     background-image: url("../../images/svg/logo-roderick.svg");
     background-size: 20%;
     background-position: center;
