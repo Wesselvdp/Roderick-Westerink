@@ -1,7 +1,13 @@
-"use strict";
+'use strict';
 
-var _rellax = require("rellax");
+// Parallax
 
-var _rellax2 = _interopRequireDefault(_rellax);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var rellax = new Rellax('.rellax');
+
+// remove "Scroll-down" after scolling
+// function removeScroller(e) {
+//    const scroller =  document.querySelector('.scrolldown');
+//    scroller.classList.toggle('away');
+// }
+// window.addEventListener('scroll', removeScrolller)

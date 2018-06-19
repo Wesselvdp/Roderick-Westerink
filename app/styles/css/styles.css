@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin);
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Cabin);
 :root {
   --blur: 5px; }
@@ -13,39 +12,6 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 50% -45rem; }
-
-.intro {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 1; }
-  .intro::before {
-    content: "";
-    background-image: url("../../images/tree-brain.jpg");
-    filter: blur(var(--blur));
-    background-size: cover;
-    z-index: -1;
-    position: fixed;
-    transition: 1.5s all cubic-bezier(0.06, 0.34, 0.21, 1.74);
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0; }
-  .intro svg {
-    width: 40%;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    margin-left: 30%;
-    border-radius: 50%; }
-  .intro #roseline,
-  .intro #majline {
-    stroke: #eee;
-    stroke-width: .5; }
-  .intro text {
-    font-family: Montserrat, sans-serif;
-    font-size: 10;
-    fill: #eee; }
 
 .intro-2 {
   position: fixed;
@@ -85,9 +51,6 @@ body {
     transition: all 0.3s ease;
     transition-delay: 0.2s; }
 
-.bg-red {
-  background: red; }
-
 .gal-mason img {
   margin: 0.75rem 0rem; }
 
@@ -100,9 +63,7 @@ body {
   z-index: 10; }
 
 .project .project-title {
-  opacity: 1;
-  transition: all 0.6s ease;
-  transition-delay: filter 0.4s; }
+  opacity: 1; }
 
 .project .project-heading-1 {
   background: url("../../images/tree-brain.jpg");
@@ -111,8 +72,7 @@ body {
   -webkit-background-clip: text;
   margin-top: 14rem;
   font-size: 22rem;
-  font-weight: 700;
-  transition: all 0.3s ease; }
+  font-weight: 700; }
 
 .project .project-heading-2 {
   background: url("../../images/building-vertical-2.jpg");
