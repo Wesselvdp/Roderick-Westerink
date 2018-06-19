@@ -79,7 +79,7 @@ body {
   z-index: 1; }
 
 .after-intro {
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.5s ease; }
 
 .backdrop {
@@ -137,7 +137,8 @@ img {
     height: 100vh;
     position: relative;
     opacity: 1;
-    background-image: url("../../images/svg/logo-roderick.svg");
+    transition: opacity 3s linear;
+    background-image: url("../images/svg/logo-roderick.svg");
     background-size: 20%;
     background-position: center;
     background-repeat: no-repeat; }

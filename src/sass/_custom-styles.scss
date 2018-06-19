@@ -107,7 +107,7 @@ body {
 
 
 .after-intro {
-    opacity: 1;
+    opacity: 0;
     transition: opacity 0.5s ease;
 }
 .backdrop {
@@ -176,10 +176,10 @@ img {
         height: 100vh;
         position: relative;
         opacity: 1;
-        // transition: opacity 3s linear;
+        transition: opacity 3s linear;
         // box-shadow: 0px 30px 60px #b9b8b8;
         background: {
-            image: url('../../images/svg/logo-roderick.svg');
+            image: url('../images/svg/logo-roderick.svg');
             size: 20%;
             position: center;
             repeat: no-repeat;
